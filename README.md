@@ -7,11 +7,12 @@ Site vitrine statique pour Emergence AMO, cabinet d’accompagnement à la maît
 - `styles.css` — compléments CSS pour les cartes, formulaires et effets d’hover.
 - `assets/` — favicon et visuels fictifs (SVG). Remplacez-les par vos images optimisées.
 - `AGENTS.md` — guide de contribution pour l’équipe technique.
+- `palette.md` — charte couleurs & typographies (références à respecter).
 
 ## Modifier le contenu
 1. Ouvrez `index.html` dans votre éditeur.
 2. Les sections sont balisées (`id="missions"`, `id="methode"`, etc.) : remplacez textes, titres et témoignages directement dans le HTML.
-3. Pour changer la palette ou la typographie, ajustez le script Tailwind dans `<head>` (objets `colors` et `fontFamily`) et complétez si besoin `styles.css`.
+3. Consulter `palette.md` avant toute variation de couleurs ou de typo ; ajustez ensuite le script Tailwind (`colors`, `fontFamily`) et complétez si besoin `styles.css`.
 4. Mettez à jour les SVG de `assets/` avec vos visuels (préférez 1200×630 pour `og-image.svg`) afin d’améliorer l’aperçu social.
 
 ## Prévisualisation locale
@@ -39,6 +40,6 @@ Le formulaire actuel déclenche votre messagerie via `mailto:contact@emergence-a
 - **Netlify Forms** : ajoutez `data-netlify="true"` au `<form>` et créez un champ caché `name="form-name"` pour la collecte.
 
 ## Accessibilité & SEO
-- Contraste AA assuré par la palette vert profond / gris ciment.
+- Contraste AA assuré par la palette vert profond `#0E6B3C` / gris `#F3F4F6`.
 - Métadonnées (`title`, `meta description`, Open Graph) déjà définies : adaptez-les à vos campagnes et domaines.
 - Vérifiez la validité HTML5 via [validator.w3.org](https://validator.w3.org/) après chaque mise à jour.

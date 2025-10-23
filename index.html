@@ -27,38 +27,40 @@
         theme: {
           extend: {
             colors: {
-              forest: '#0B3B2E',
-              canopy: '#1F5F4B',
-              moss: '#2D7A5B',
-              pebble: '#E5E7EB',
-              concrete: '#4B5563',
-              cloud: '#F9FAFB',
+              primary: '#0E6B3C',
+              primaryDark: '#0B5A31',
+              backdrop: '#F3F4F6',
+              surface: '#FFFFFF',
+              text: '#111827',
             },
             fontFamily: {
               sans: ['Inter', 'system-ui', 'sans-serif'],
             },
             boxShadow: {
-              soft: '0 20px 45px -20px rgba(15, 56, 45, 0.35)',
+              soft: '0 20px 45px -20px rgba(14, 107, 60, 0.35)',
             },
           },
         },
       };
     </script>
   </head>
-  <body class="font-sans text-concrete bg-cloud antialiased scroll-smooth">
-    <header class="relative overflow-hidden bg-forest text-white">
-      <div class="absolute inset-0 opacity-50 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.25),_transparent_60%)]"></div>
+  <body class="font-sans text-text bg-backdrop antialiased scroll-smooth">
+    <header class="relative overflow-hidden bg-primary text-white">
+      <div class="absolute inset-0 opacity-60 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.22),_transparent_65%)]"></div>
       <nav class="relative z-10 mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <a href="#hero" class="text-xl font-semibold tracking-tight">Emergence AMO</a>
+        <a href="#hero" class="logo-text" aria-label="Accueil Emergence AMO">
+          <span>Emergence</span>
+          <span>AMO</span>
+        </a>
         <div class="hidden gap-6 text-sm font-medium md:flex">
-          <a class="transition hover:text-pebble" href="#missions">Nos missions</a>
-          <a class="transition hover:text-pebble" href="#methode">Méthode</a>
-          <a class="transition hover:text-pebble" href="#references">Références</a>
-          <a class="transition hover:text-pebble" href="#contact">Contact</a>
+          <a class="transition hover:text-white/80" href="#missions">Nos missions</a>
+          <a class="transition hover:text-white/80" href="#methode">Méthode</a>
+          <a class="transition hover:text-white/80" href="#references">Références</a>
+          <a class="transition hover:text-white/80" href="#contact">Contact</a>
         </div>
         <a
           href="#contact"
-          class="hidden rounded-full border border-white/60 px-4 py-2 text-sm font-semibold tracking-wide transition hover:bg-white hover:text-forest md:inline-block"
+          class="hidden rounded-full bg-primary px-4 py-2 text-sm font-semibold tracking-wide text-white transition hover:bg-primaryDark md:inline-block"
         >
           Parler de votre projet
         </a>
@@ -78,13 +80,13 @@
           <div class="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
               href="#contact"
-              class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-forest shadow-soft transition hover:translate-y-0.5 hover:bg-pebble"
+              class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-primaryDark"
             >
               Discuter de votre projet
             </a>
             <a
               href="#missions"
-              class="inline-flex items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
+              class="inline-flex items-center justify-center rounded-full bg-primary/90 px-6 py-3 text-sm font-semibold text-white transition hover:bg-primaryDark"
             >
               Découvrir nos missions
             </a>
@@ -116,8 +118,8 @@
       <section id="missions" class="mx-auto max-w-6xl px-6 py-20">
         <div class="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 class="text-3xl font-semibold text-forest">Nos missions</h2>
-            <p class="mt-3 max-w-2xl text-base text-concrete/90">
+            <h2 class="text-3xl font-semibold text-primary">Nos missions</h2>
+            <p class="mt-3 max-w-2xl text-base text-text/80">
               Du diagnostic amont à la mise en service, Emergence AMO sécurise chaque décision technique, environnementale et économique.
             </p>
           </div>
@@ -156,10 +158,10 @@
         </div>
       </section>
 
-      <section id="methode" class="bg-white py-20">
+      <section id="methode" class="bg-surface py-20">
         <div class="mx-auto max-w-6xl px-6">
-          <h2 class="text-3xl font-semibold text-forest">Notre méthode</h2>
-          <p class="mt-3 max-w-2xl text-base text-concrete/90">
+          <h2 class="text-3xl font-semibold text-primary">Notre méthode</h2>
+          <p class="mt-3 max-w-2xl text-base text-text/80">
             Une mission AMO structurée en étapes claires pour sécuriser les décisions et garantir la performance durable de l’ouvrage.
           </p>
           <div class="mt-10 grid gap-6 md:grid-cols-5">
@@ -167,8 +169,8 @@
               <div class="method-icon">
                 <svg viewBox="0 0 48 48" role="img" aria-labelledby="diagnostic-icon-title">
                   <title id="diagnostic-icon-title">Diagnostic</title>
-                  <circle cx="24" cy="24" r="22" fill="#2D7A5B" opacity="0.18" />
-                  <path d="M18 30l-4-4 2-2 2 2 8-8 2 2-10 10z" fill="#2D7A5B" />
+                  <circle cx="24" cy="24" r="22" fill="#0E6B3C" opacity="0.18" />
+                  <path d="M18 30l-4-4 2-2 2 2 8-8 2 2-10 10z" fill="#0E6B3C" />
                 </svg>
               </div>
               <h3>Diagnostic</h3>
@@ -178,8 +180,8 @@
               <div class="method-icon">
                 <svg viewBox="0 0 48 48" role="img" aria-labelledby="feasibility-icon-title">
                   <title id="feasibility-icon-title">Faisabilité</title>
-                  <rect x="6" y="8" width="36" height="32" rx="6" fill="#2D7A5B" opacity="0.18" />
-                  <path d="M12 30h24v-4H12v4zm0-8h18v-4H12v4z" fill="#2D7A5B" />
+                  <rect x="6" y="8" width="36" height="32" rx="6" fill="#0E6B3C" opacity="0.18" />
+                  <path d="M12 30h24v-4H12v4zm0-8h18v-4H12v4z" fill="#0E6B3C" />
                 </svg>
               </div>
               <h3>Faisabilité</h3>
@@ -189,8 +191,8 @@
               <div class="method-icon">
                 <svg viewBox="0 0 48 48" role="img" aria-labelledby="studies-icon-title">
                   <title id="studies-icon-title">Études</title>
-                  <path d="M10 14h28v20H10z" fill="#2D7A5B" opacity="0.18" />
-                  <path d="M18 18h4v12h-4zm8 0h4v12h-4z" fill="#2D7A5B" />
+                  <path d="M10 14h28v20H10z" fill="#0E6B3C" opacity="0.18" />
+                  <path d="M18 18h4v12h-4zm8 0h4v12h-4z" fill="#0E6B3C" />
                 </svg>
               </div>
               <h3>Études</h3>
@@ -200,8 +202,8 @@
               <div class="method-icon">
                 <svg viewBox="0 0 48 48" role="img" aria-labelledby="site-icon-title">
                   <title id="site-icon-title">Suivi de chantier</title>
-                  <path d="M8 32h32v8H8z" fill="#2D7A5B" opacity="0.18" />
-                  <path d="M14 16l10-6 10 6v10H14z" fill="#2D7A5B" />
+                  <path d="M8 32h32v8H8z" fill="#0E6B3C" opacity="0.18" />
+                  <path d="M14 16l10-6 10 6v10H14z" fill="#0E6B3C" />
                 </svg>
               </div>
               <h3>Suivi de chantier</h3>
@@ -211,8 +213,8 @@
               <div class="method-icon">
                 <svg viewBox="0 0 48 48" role="img" aria-labelledby="operation-icon-title">
                   <title id="operation-icon-title">Exploitation</title>
-                  <circle cx="24" cy="24" r="18" fill="#2D7A5B" opacity="0.18" />
-                  <path d="M24 14v10l6 6" stroke="#2D7A5B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="24" cy="24" r="18" fill="#0E6B3C" opacity="0.18" />
+                  <path d="M24 14v10l6 6" stroke="#0E6B3C" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </div>
               <h3>Exploitation</h3>
@@ -225,8 +227,8 @@
       <section id="references" class="mx-auto max-w-6xl px-6 py-20">
         <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 class="text-3xl font-semibold text-forest">Références sélectionnées</h2>
-            <p class="mt-3 max-w-2xl text-base text-concrete/90">
+            <h2 class="text-3xl font-semibold text-primary">Références sélectionnées</h2>
+            <p class="mt-3 max-w-2xl text-base text-text/80">
               Projets accompagnés de la programmation à l’exploitation, avec des objectifs carbone ambitieux et des usages exigeants.
             </p>
           </div>
@@ -267,17 +269,17 @@
         </div>
       </section>
 
-      <section id="temoignages" class="bg-white py-20">
+      <section id="temoignages" class="bg-surface py-20">
         <div class="mx-auto max-w-6xl px-6">
-          <h2 class="text-3xl font-semibold text-forest">Témoignages</h2>
+          <h2 class="text-3xl font-semibold text-primary">Témoignages</h2>
           <div class="mt-10 grid gap-6 md:grid-cols-2">
             <figure class="testimonial-card">
               <blockquote>
                 « Emergence AMO a clarifié chaque décision, du diagnostic aux essais finaux, tout en réduisant de 40 % l’empreinte carbone initiale. »
               </blockquote>
               <figcaption>
-                <span class="font-semibold text-forest">Claire Dubois</span>
-                <span class="text-sm text-concrete/80">Directrice Immobilier - Métropole Valverte</span>
+                <span class="font-semibold text-primary">Claire Dubois</span>
+                <span class="text-sm text-text/70">Directrice Immobilier - Métropole Valverte</span>
               </figcaption>
             </figure>
             <figure class="testimonial-card">
@@ -285,8 +287,8 @@
                 « Leur expertise des labels HQE et BREEAM nous a permis d’obtenir la double certification sans retard ni surcoût. »
               </blockquote>
               <figcaption>
-                <span class="font-semibold text-forest">Julien Martin</span>
-                <span class="text-sm text-concrete/80">CEO - NovaCampus</span>
+                <span class="font-semibold text-primary">Julien Martin</span>
+                <span class="text-sm text-text/70">CEO - NovaCampus</span>
               </figcaption>
             </figure>
           </div>
@@ -294,10 +296,10 @@
       </section>
 
       <section id="contact" class="mx-auto max-w-4xl px-6 py-20">
-        <div class="rounded-3xl bg-white p-10 shadow-soft">
+        <div class="rounded-3xl bg-surface p-10 shadow-soft">
           <div class="mb-8">
-            <h2 class="text-3xl font-semibold text-forest">Contact</h2>
-            <p class="mt-3 text-base text-concrete/90">
+            <h2 class="text-3xl font-semibold text-primary">Contact</h2>
+            <p class="mt-3 text-base text-text/80">
               Décrivez-nous votre projet : nous revenons vers vous sous 48 h pour cadrer la mission.
             </p>
           </div>
@@ -308,7 +310,7 @@
             enctype="text/plain"
           >
             <div class="grid gap-2">
-              <label class="text-sm font-medium text-concrete" for="name">Nom et organisation</label>
+              <label class="text-sm font-medium text-text/80" for="name">Nom et organisation</label>
               <input
                 id="name"
                 name="name"
@@ -320,7 +322,7 @@
               />
             </div>
             <div class="grid gap-2">
-              <label class="text-sm font-medium text-concrete" for="email">Email professionnel</label>
+              <label class="text-sm font-medium text-text/80" for="email">Email professionnel</label>
               <input
                 id="email"
                 name="email"
@@ -332,7 +334,7 @@
               />
             </div>
             <div class="grid gap-2">
-              <label class="text-sm font-medium text-concrete" for="message">Message</label>
+              <label class="text-sm font-medium text-text/80" for="message">Message</label>
               <textarea
                 id="message"
                 name="message"
@@ -342,10 +344,10 @@
                 placeholder="Budget, planning, objectifs carbone, certifications visées…"
               ></textarea>
             </div>
-            <button type="submit" class="inline-flex items-center justify-center rounded-full bg-forest px-6 py-3 text-sm font-semibold text-white transition hover:bg-canopy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest">
+            <button type="submit" class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-primaryDark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
               Envoyer
             </button>
-            <p class="text-xs text-concrete/70">
+            <p class="text-xs text-text/60">
               En soumettant ce formulaire, vous acceptez que vos données soient traitées pour répondre à votre demande. Aucune prospection n’est effectuée sans
               votre accord.
             </p>
@@ -353,10 +355,10 @@
         </div>
       </section>
 
-      <section id="mentions" class="bg-white py-12">
+      <section id="mentions" class="bg-surface py-12">
         <div class="mx-auto max-w-6xl px-6">
-          <h2 class="text-2xl font-semibold text-forest">Mentions légales</h2>
-          <div class="mt-4 space-y-3 text-sm text-concrete/90">
+          <h2 class="text-2xl font-semibold text-primary">Mentions légales</h2>
+          <div class="mt-4 space-y-3 text-sm text-text/75">
             <p><strong>Éditeur :</strong> Emergence AMO, SAS au capital de 50 000 € – 15 rue des Canopées, 69002 Lyon – SIRET 902 456 123 00018.</p>
             <p><strong>Directeur de la publication :</strong> Jeanne Morel, Présidente.</p>
             <p><strong>Hébergement :</strong> Netlify, Inc., 2325 3rd Street, Suite 296, San Francisco, CA 94107, USA.</p>
@@ -366,17 +368,17 @@
       </section>
     </main>
 
-    <footer class="bg-forest py-10 text-white">
+    <footer class="bg-primary py-10 text-white">
       <div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 md:flex-row md:items-center md:justify-between">
         <div>
           <p class="text-lg font-semibold tracking-tight">© <span id="year">2024</span> Emergence AMO</p>
-          <p class="text-sm text-white/70">Accompagnement à la maîtrise d’ouvrage pour la transition écologique du bâti.</p>
+          <p class="text-sm text-white/75">Accompagnement à la maîtrise d’ouvrage pour la transition écologique du bâti.</p>
         </div>
         <div class="flex flex-col gap-3 text-sm md:items-end">
           <div class="flex items-center gap-4">
-            <a href="https://www.linkedin.com" class="transition hover:text-pebble" aria-label="LinkedIn Emergence AMO">LinkedIn</a>
-            <a href="https://www.youtube.com" class="transition hover:text-pebble" aria-label="YouTube Emergence AMO">YouTube</a>
-            <a href="#contact" class="transition hover:text-pebble">Contact</a>
+            <a href="https://www.linkedin.com" class="transition hover:text-white/80" aria-label="LinkedIn Emergence AMO">LinkedIn</a>
+            <a href="https://www.youtube.com" class="transition hover:text-white/80" aria-label="YouTube Emergence AMO">YouTube</a>
+            <a href="#contact" class="transition hover:text-white/80">Contact</a>
           </div>
           <a href="#mentions" class="text-xs text-white/70 underline underline-offset-4">Mentions légales</a>
         </div>
