@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergence AMO | Accompagnement à la Maîtrise d'Ouvrage Durable</title>
+    <meta
+      name="description"
+      content="Emergence AMO conseille les maîtres d'ouvrage en éco-conception, économie circulaire et certifications environnementales pour des projets durables."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Emergence AMO - L'éco-conception au service de vos projets" />
+    <meta
+      property="og:description"
+      content="Accompagnement à la maîtrise d'ouvrage pour des bâtiments durables : AMO, ACV, économie circulaire, certifications HQE et BREEAM."
+    />
+    <meta property="og:url" content="https://emergence-amo.fr" />
+    <meta property="og:image" content="assets/og-image.svg" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              forest: '#0B3B2E',
+              canopy: '#1F5F4B',
+              moss: '#2D7A5B',
+              pebble: '#E5E7EB',
+              concrete: '#4B5563',
+              cloud: '#F9FAFB',
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            boxShadow: {
+              soft: '0 20px 45px -20px rgba(15, 56, 45, 0.35)',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans text-concrete bg-cloud antialiased scroll-smooth">
+    <header class="relative overflow-hidden bg-forest text-white">
+      <div class="absolute inset-0 opacity-50 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.25),_transparent_60%)]"></div>
+      <nav class="relative z-10 mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+        <a href="#hero" class="text-xl font-semibold tracking-tight">Emergence AMO</a>
+        <div class="hidden gap-6 text-sm font-medium md:flex">
+          <a class="transition hover:text-pebble" href="#missions">Nos missions</a>
+          <a class="transition hover:text-pebble" href="#methode">Méthode</a>
+          <a class="transition hover:text-pebble" href="#references">Références</a>
+          <a class="transition hover:text-pebble" href="#contact">Contact</a>
+        </div>
+        <a
+          href="#contact"
+          class="hidden rounded-full border border-white/60 px-4 py-2 text-sm font-semibold tracking-wide transition hover:bg-white hover:text-forest md:inline-block"
+        >
+          Parler de votre projet
+        </a>
+      </nav>
+      <section id="hero" class="relative z-10 mx-auto flex max-w-6xl flex-col gap-10 px-6 pb-24 pt-12 md:flex-row md:items-center">
+        <div class="max-w-xl">
+          <p class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs uppercase tracking-[0.2em]">
+            Bâtiment durable
+          </p>
+          <h1 class="text-4xl font-semibold leading-tight md:text-5xl">
+            L’éco-conception au service de vos projets de construction et rénovation
+          </h1>
+          <p class="mt-6 text-lg text-white/80">
+            Emergence AMO accompagne les maîtres d’ouvrage publics et privés pour concevoir, piloter et exploiter des bâtiments à faible impact carbone,
+            performants et certifiés.
+          </p>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-forest shadow-soft transition hover:translate-y-0.5 hover:bg-pebble"
+            >
+              Discuter de votre projet
+            </a>
+            <a
+              href="#missions"
+              class="inline-flex items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
+            >
+              Découvrir nos missions
+            </a>
+          </div>
+        </div>
+        <div class="relative mt-10 w-full md:mt-0 md:w-5/12">
+          <div class="rounded-3xl border border-white/20 bg-white/10 p-6 backdrop-blur">
+            <p class="text-sm uppercase tracking-[0.35em] text-white/60">Vision</p>
+            <p class="mt-4 text-base font-medium text-white/95">
+              Nos AMO défrichent votre feuille de route carbone, orchestrent les expertises et pilotent l’exécution pour livrer un ouvrage durable, conforme
+              aux labels HQE, BREEAM ou BBCA.
+            </p>
+            <div class="mt-6 grid grid-cols-2 gap-4 text-sm text-white/80">
+              <div>
+                <p class="text-3xl font-semibold text-white">120k</p>
+                <p>m² livrés sous 24 mois</p>
+              </div>
+              <div>
+                <p class="text-3xl font-semibold text-white">-38%</p>
+                <p>émissions évitées en moyenne</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="missions" class="mx-auto max-w-6xl px-6 py-20">
+        <div class="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 class="text-3xl font-semibold text-forest">Nos missions</h2>
+            <p class="mt-3 max-w-2xl text-base text-concrete/90">
+              Du diagnostic amont à la mise en service, Emergence AMO sécurise chaque décision technique, environnementale et économique.
+            </p>
+          </div>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="card">
+            <h3 class="card-title">AMO complète</h3>
+            <p class="card-text">
+              Pilotage global des phases programmation, études, consultation, suivi de travaux et réception pour garantir délais, coûts et performance durable.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Conseil en éco-conception</h3>
+            <p class="card-text">
+              Optimisation bioclimatique, choix des matériaux biosourcés, sobriété énergétique et approche bas carbone dès l’esquisse.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Analyse du cycle de vie (ACV)</h3>
+            <p class="card-text">
+              Modélisation des impacts carbone et énergie grise, scénarios de réduction et dossier RE2020 pour sécuriser vos autorisations.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Économie circulaire</h3>
+            <p class="card-text">
+              Stratégie de réemploi, cartographie des gisements, sourcing matière et suivi logistique pour maximiser la circularité du chantier.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Certifications environnementales</h3>
+            <p class="card-text">
+              Accompagnement HQE, BREEAM, LEED, BBCA : montage des dossiers, coordination des bureaux d’études et préparation des audits.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="methode" class="bg-white py-20">
+        <div class="mx-auto max-w-6xl px-6">
+          <h2 class="text-3xl font-semibold text-forest">Notre méthode</h2>
+          <p class="mt-3 max-w-2xl text-base text-concrete/90">
+            Une mission AMO structurée en étapes claires pour sécuriser les décisions et garantir la performance durable de l’ouvrage.
+          </p>
+          <div class="mt-10 grid gap-6 md:grid-cols-5">
+            <div class="method-card">
+              <div class="method-icon">
+                <svg viewBox="0 0 48 48" role="img" aria-labelledby="diagnostic-icon-title">
+                  <title id="diagnostic-icon-title">Diagnostic</title>
+                  <circle cx="24" cy="24" r="22" fill="#2D7A5B" opacity="0.18" />
+                  <path d="M18 30l-4-4 2-2 2 2 8-8 2 2-10 10z" fill="#2D7A5B" />
+                </svg>
+              </div>
+              <h3>Diagnostic</h3>
+              <p>Audit des usages, contraintes réglementaires et attentes des parties prenantes.</p>
+            </div>
+            <div class="method-card">
+              <div class="method-icon">
+                <svg viewBox="0 0 48 48" role="img" aria-labelledby="feasibility-icon-title">
+                  <title id="feasibility-icon-title">Faisabilité</title>
+                  <rect x="6" y="8" width="36" height="32" rx="6" fill="#2D7A5B" opacity="0.18" />
+                  <path d="M12 30h24v-4H12v4zm0-8h18v-4H12v4z" fill="#2D7A5B" />
+                </svg>
+              </div>
+              <h3>Faisabilité</h3>
+              <p>Études technico-économiques, scénarios ACV et définition des indicateurs clés.</p>
+            </div>
+            <div class="method-card">
+              <div class="method-icon">
+                <svg viewBox="0 0 48 48" role="img" aria-labelledby="studies-icon-title">
+                  <title id="studies-icon-title">Études</title>
+                  <path d="M10 14h28v20H10z" fill="#2D7A5B" opacity="0.18" />
+                  <path d="M18 18h4v12h-4zm8 0h4v12h-4z" fill="#2D7A5B" />
+                </svg>
+              </div>
+              <h3>Études</h3>
+              <p>Coordination des bureaux d’études, modélisation énergétique et rédaction du CCTP.</p>
+            </div>
+            <div class="method-card">
+              <div class="method-icon">
+                <svg viewBox="0 0 48 48" role="img" aria-labelledby="site-icon-title">
+                  <title id="site-icon-title">Suivi de chantier</title>
+                  <path d="M8 32h32v8H8z" fill="#2D7A5B" opacity="0.18" />
+                  <path d="M14 16l10-6 10 6v10H14z" fill="#2D7A5B" />
+                </svg>
+              </div>
+              <h3>Suivi de chantier</h3>
+              <p>Pilotage qualité, traçabilité matière, contrôle des objectifs environnementaux.</p>
+            </div>
+            <div class="method-card">
+              <div class="method-icon">
+                <svg viewBox="0 0 48 48" role="img" aria-labelledby="operation-icon-title">
+                  <title id="operation-icon-title">Exploitation</title>
+                  <circle cx="24" cy="24" r="18" fill="#2D7A5B" opacity="0.18" />
+                  <path d="M24 14v10l6 6" stroke="#2D7A5B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>Exploitation</h3>
+              <p>Commissioning, suivi des consommations et ajustements post-livraison.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="references" class="mx-auto max-w-6xl px-6 py-20">
+        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 class="text-3xl font-semibold text-forest">Références sélectionnées</h2>
+            <p class="mt-3 max-w-2xl text-base text-concrete/90">
+              Projets accompagnés de la programmation à l’exploitation, avec des objectifs carbone ambitieux et des usages exigeants.
+            </p>
+          </div>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <article class="reference-card">
+            <img src="assets/projet-eco-1.svg" alt="Maquette du projet de rénovation d’une école primaire à énergie positive" class="reference-image" />
+            <div class="reference-content">
+              <h3>École primaire Simone Veil (Lyon)</h3>
+              <p>Rénovation lourde BBC, ventilation naturelle, réemploi de menuiseries bois et couverture photovoltaïque.</p>
+              <p class="reference-meta">Mission : AMO + certification HQE Excellent</p>
+            </div>
+          </article>
+          <article class="reference-card">
+            <img src="assets/projet-eco-2.svg" alt="Perspective d’un immeuble tertiaire bas carbone à Strasbourg" class="reference-image" />
+            <div class="reference-content">
+              <h3>Tertiaire PassivHaus (Strasbourg)</h3>
+              <p>Bâtiment neutre en carbone, structure mixte bois-béton, monitoring énergétique en exploitation.</p>
+              <p class="reference-meta">Mission : ACV + suivi de chantier</p>
+            </div>
+          </article>
+          <article class="reference-card">
+            <img src="assets/projet-eco-3.svg" alt="Vue d’un centre culturel en structure bois et terre crue" class="reference-image" />
+            <div class="reference-content">
+              <h3>Centre culturel Les Canopées (Nantes)</h3>
+              <p>Structure lamellé-collé, remplissage terre crue, conception bioclimatique et matériaux locaux.</p>
+              <p class="reference-meta">Mission : Conseil en éco-conception</p>
+            </div>
+          </article>
+          <article class="reference-card">
+            <img src="assets/projet-eco-4.svg" alt="Schéma d’un écoquartier favorisant l’économie circulaire" class="reference-image" />
+            <div class="reference-content">
+              <h3>Écoquartier Circularis (Toulouse)</h3>
+              <p>Réemploi in situ, plateforme logistique circulaire et pilotage des flux matière.</p>
+              <p class="reference-meta">Mission : Économie circulaire + certification BREEAM</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="temoignages" class="bg-white py-20">
+        <div class="mx-auto max-w-6xl px-6">
+          <h2 class="text-3xl font-semibold text-forest">Témoignages</h2>
+          <div class="mt-10 grid gap-6 md:grid-cols-2">
+            <figure class="testimonial-card">
+              <blockquote>
+                « Emergence AMO a clarifié chaque décision, du diagnostic aux essais finaux, tout en réduisant de 40 % l’empreinte carbone initiale. »
+              </blockquote>
+              <figcaption>
+                <span class="font-semibold text-forest">Claire Dubois</span>
+                <span class="text-sm text-concrete/80">Directrice Immobilier - Métropole Valverte</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial-card">
+              <blockquote>
+                « Leur expertise des labels HQE et BREEAM nous a permis d’obtenir la double certification sans retard ni surcoût. »
+              </blockquote>
+              <figcaption>
+                <span class="font-semibold text-forest">Julien Martin</span>
+                <span class="text-sm text-concrete/80">CEO - NovaCampus</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="mx-auto max-w-4xl px-6 py-20">
+        <div class="rounded-3xl bg-white p-10 shadow-soft">
+          <div class="mb-8">
+            <h2 class="text-3xl font-semibold text-forest">Contact</h2>
+            <p class="mt-3 text-base text-concrete/90">
+              Décrivez-nous votre projet : nous revenons vers vous sous 48 h pour cadrer la mission.
+            </p>
+          </div>
+          <form
+            class="grid gap-6"
+            action="mailto:contact@emergence-amo.fr"
+            method="POST"
+            enctype="text/plain"
+          >
+            <div class="grid gap-2">
+              <label class="text-sm font-medium text-concrete" for="name">Nom et organisation</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                class="form-input"
+                placeholder="Alice Martin – Ville de Montserein"
+                autocomplete="name"
+              />
+            </div>
+            <div class="grid gap-2">
+              <label class="text-sm font-medium text-concrete" for="email">Email professionnel</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                class="form-input"
+                placeholder="alice.martin@collectivite.fr"
+                autocomplete="email"
+              />
+            </div>
+            <div class="grid gap-2">
+              <label class="text-sm font-medium text-concrete" for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                class="form-input"
+                placeholder="Budget, planning, objectifs carbone, certifications visées…"
+              ></textarea>
+            </div>
+            <button type="submit" class="inline-flex items-center justify-center rounded-full bg-forest px-6 py-3 text-sm font-semibold text-white transition hover:bg-canopy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest">
+              Envoyer
+            </button>
+            <p class="text-xs text-concrete/70">
+              En soumettant ce formulaire, vous acceptez que vos données soient traitées pour répondre à votre demande. Aucune prospection n’est effectuée sans
+              votre accord.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section id="mentions" class="bg-white py-12">
+        <div class="mx-auto max-w-6xl px-6">
+          <h2 class="text-2xl font-semibold text-forest">Mentions légales</h2>
+          <div class="mt-4 space-y-3 text-sm text-concrete/90">
+            <p><strong>Éditeur :</strong> Emergence AMO, SAS au capital de 50 000 € – 15 rue des Canopées, 69002 Lyon – SIRET 902 456 123 00018.</p>
+            <p><strong>Directeur de la publication :</strong> Jeanne Morel, Présidente.</p>
+            <p><strong>Hébergement :</strong> Netlify, Inc., 2325 3rd Street, Suite 296, San Francisco, CA 94107, USA.</p>
+            <p><strong>Données personnelles :</strong> Les informations recueillies sont destinées à répondre à vos demandes et sont conservées 24 mois.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-forest py-10 text-white">
+      <div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p class="text-lg font-semibold tracking-tight">© <span id="year">2024</span> Emergence AMO</p>
+          <p class="text-sm text-white/70">Accompagnement à la maîtrise d’ouvrage pour la transition écologique du bâti.</p>
+        </div>
+        <div class="flex flex-col gap-3 text-sm md:items-end">
+          <div class="flex items-center gap-4">
+            <a href="https://www.linkedin.com" class="transition hover:text-pebble" aria-label="LinkedIn Emergence AMO">LinkedIn</a>
+            <a href="https://www.youtube.com" class="transition hover:text-pebble" aria-label="YouTube Emergence AMO">YouTube</a>
+            <a href="#contact" class="transition hover:text-pebble">Contact</a>
+          </div>
+          <a href="#mentions" class="text-xs text-white/70 underline underline-offset-4">Mentions légales</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const yearElement = document.getElementById('year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>
